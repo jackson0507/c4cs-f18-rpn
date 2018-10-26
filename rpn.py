@@ -12,7 +12,10 @@ def calculate(arg):
             val2 = stack.pop()
             val1 = stack.pop()
 
-            result = val1 + val2
+            if (token == "+"):
+                result = val1 + val2
+            elif (token == "-"):
+                result = val1 - val2
 
             stack.append(result)
 
